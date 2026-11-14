@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+
+vault/
+vault_state.json
+static/forensics/*.png

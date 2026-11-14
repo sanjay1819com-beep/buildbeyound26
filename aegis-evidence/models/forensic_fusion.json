@@ -1,0 +1,100 @@
+{
+ "weights": {
+  "T1_white_mark_fill": 1.0,
+  "T2_foreign_patch": 1.0,
+  "T3_copy_move_clone": 1.0,
+  "T4_glyph_colour_drift": 1.0,
+  "T5_jpeg_grid": 1.0,
+  "T6_container_metadata": 1.0
+ },
+ "source": "learned on forensic_corpus (1 - measured false-fire rate per test)",
+ "fusion": "noisy-OR",
+ "loocv_accuracy": null,
+ "corpus": "15 genuine / 60 tampered",
+ "per_test_reliability": {
+  "T1_white_mark_fill": {
+   "genuine_false_fires": 0,
+   "genuine_n": 15,
+   "false_fire_rate": 0.0,
+   "catch_rate_by_operation": {
+    "clone": "0/12",
+    "eraser": "9/12",
+    "jpeg_splice": "1/12",
+    "overtype": "0/12",
+    "paste": "3/12"
+   },
+   "total_catches": 13,
+   "learned_reliability_lambda": 1.0
+  },
+  "T2_foreign_patch": {
+   "genuine_false_fires": 0,
+   "genuine_n": 15,
+   "false_fire_rate": 0.0,
+   "catch_rate_by_operation": {
+    "clone": "0/12",
+    "eraser": "0/12",
+    "jpeg_splice": "8/12",
+    "overtype": "0/12",
+    "paste": "0/12"
+   },
+   "total_catches": 8,
+   "learned_reliability_lambda": 1.0
+  },
+  "T3_copy_move_clone": {
+   "genuine_false_fires": 0,
+   "genuine_n": 15,
+   "false_fire_rate": 0.0,
+   "catch_rate_by_operation": {
+    "clone": "3/12",
+    "eraser": "0/12",
+    "jpeg_splice": "0/12",
+    "overtype": "0/12",
+    "paste": "0/12"
+   },
+   "total_catches": 3,
+   "learned_reliability_lambda": 1.0
+  },
+  "T4_glyph_colour_drift": {
+   "genuine_false_fires": 0,
+   "genuine_n": 15,
+   "false_fire_rate": 0.0,
+   "catch_rate_by_operation": {
+    "clone": "0/12",
+    "eraser": "0/12",
+    "jpeg_splice": "0/12",
+    "overtype": "0/12",
+    "paste": "0/12"
+   },
+   "total_catches": 0,
+   "learned_reliability_lambda": 1.0
+  },
+  "T5_jpeg_grid": {
+   "genuine_false_fires": 0,
+   "genuine_n": 15,
+   "false_fire_rate": 0.0,
+   "catch_rate_by_operation": {
+    "clone": "0/12",
+    "eraser": "0/12",
+    "jpeg_splice": "0/12",
+    "overtype": "0/12",
+    "paste": "0/12"
+   },
+   "total_catches": 0,
+   "learned_reliability_lambda": 1.0
+  },
+  "T6_container_metadata": {
+   "genuine_false_fires": 0,
+   "genuine_n": 15,
+   "false_fire_rate": 0.0,
+   "catch_rate_by_operation": {
+    "clone": "0/12",
+    "eraser": "0/12",
+    "jpeg_splice": "0/12",
+    "overtype": "0/12",
+    "paste": "0/12"
+   },
+   "total_catches": 0,
+   "learned_reliability_lambda": 1.0
+  }
+ }
+}

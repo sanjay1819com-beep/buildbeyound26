@@ -1,0 +1,1287 @@
+{
+ "summary": {
+  "corpus": {
+   "genuine": 15,
+   "tampered": 60,
+   "includes_real_demo_exhibits": 3,
+   "operations": [
+    "clone",
+    "eraser",
+    "jpeg_splice",
+    "overtype",
+    "paste"
+   ],
+   "source": "forensic_corpus/ (synthetic ground truth)"
+  },
+  "fused_auc": 0.7,
+  "genuine_false_positive_rate": 0.0,
+  "genuine_false_positives": "0/15",
+  "tampered_sensitivity": 0.3667,
+  "tampered_caught": "22/60",
+  "tampered_flagged_at_all": "23/60",
+  "tampered_flag_rate": 0.3833,
+  "genuine_flagged_at_all": "0/15",
+  "inconclusive_band_note": "A fused score of 22-40% reads INCONCLUSIVE - LOW-LEVEL SIGNAL, which routes the exhibit to expert review rather than asserting forgery.",
+  "likely_manipulated_caught": "20/60",
+  "sensitivity_by_operation": {
+   "clone": {
+    "caught": 3,
+    "flagged": 3,
+    "total": 12,
+    "rate": 0.25,
+    "flag_rate": 0.25,
+    "mean_fused_pct": 25.6
+   },
+   "eraser": {
+    "caught": 9,
+    "flagged": 9,
+    "total": 12,
+    "rate": 0.75,
+    "flag_rate": 0.75,
+    "mean_fused_pct": 75.0
+   },
+   "jpeg_splice": {
+    "caught": 7,
+    "flagged": 8,
+    "total": 12,
+    "rate": 0.583,
+    "flag_rate": 0.667,
+    "mean_fused_pct": 42.2
+   },
+   "overtype": {
+    "caught": 0,
+    "flagged": 0,
+    "total": 12,
+    "rate": 0.0,
+    "flag_rate": 0.0,
+    "mean_fused_pct": 0.0
+   },
+   "paste": {
+    "caught": 3,
+    "flagged": 3,
+    "total": 12,
+    "rate": 0.25,
+    "flag_rate": 0.25,
+    "mean_fused_pct": 24.2
+   }
+  },
+  "per_test": {
+   "T1_white_mark_fill": {
+    "genuine_false_fires": 0,
+    "genuine_n": 15,
+    "false_fire_rate": 0.0,
+    "catch_rate_by_operation": {
+     "clone": "0/12",
+     "eraser": "9/12",
+     "jpeg_splice": "1/12",
+     "overtype": "0/12",
+     "paste": "3/12"
+    },
+    "total_catches": 13,
+    "learned_reliability_lambda": 1.0
+   },
+   "T2_foreign_patch": {
+    "genuine_false_fires": 0,
+    "genuine_n": 15,
+    "false_fire_rate": 0.0,
+    "catch_rate_by_operation": {
+     "clone": "0/12",
+     "eraser": "0/12",
+     "jpeg_splice": "8/12",
+     "overtype": "0/12",
+     "paste": "0/12"
+    },
+    "total_catches": 8,
+    "learned_reliability_lambda": 1.0
+   },
+   "T3_copy_move_clone": {
+    "genuine_false_fires": 0,
+    "genuine_n": 15,
+    "false_fire_rate": 0.0,
+    "catch_rate_by_operation": {
+     "clone": "3/12",
+     "eraser": "0/12",
+     "jpeg_splice": "0/12",
+     "overtype": "0/12",
+     "paste": "0/12"
+    },
+    "total_catches": 3,
+    "learned_reliability_lambda": 1.0
+   },
+   "T4_glyph_colour_drift": {
+    "genuine_false_fires": 0,
+    "genuine_n": 15,
+    "false_fire_rate": 0.0,
+    "catch_rate_by_operation": {
+     "clone": "0/12",
+     "eraser": "0/12",
+     "jpeg_splice": "0/12",
+     "overtype": "0/12",
+     "paste": "0/12"
+    },
+    "total_catches": 0,
+    "learned_reliability_lambda": 1.0
+   },
+   "T5_jpeg_grid": {
+    "genuine_false_fires": 0,
+    "genuine_n": 15,
+    "false_fire_rate": 0.0,
+    "catch_rate_by_operation": {
+     "clone": "0/12",
+     "eraser": "0/12",
+     "jpeg_splice": "0/12",
+     "overtype": "0/12",
+     "paste": "0/12"
+    },
+    "total_catches": 0,
+    "learned_reliability_lambda": 1.0
+   },
+   "T6_container_metadata": {
+    "genuine_false_fires": 0,
+    "genuine_n": 15,
+    "false_fire_rate": 0.0,
+    "catch_rate_by_operation": {
+     "clone": "0/12",
+     "eraser": "0/12",
+     "jpeg_splice": "0/12",
+     "overtype": "0/12",
+     "paste": "0/12"
+    },
+    "total_catches": 0,
+    "learned_reliability_lambda": 1.0
+   }
+  },
+  "fusion": "noisy-OR over reliability-discounted test scores",
+  "decision_threshold_pct": 40.0,
+  "strong_threshold_pct": 62,
+  "known_limitation": "A same-font, near-same-colour OVERTYPE leaves no chromatic trace and was not detected by any pixel test in this corpus. That class is caught by the platform's cross-evidence SEMANTIC engine (contradiction against other exhibits) instead - pixel forensics and semantic consistency are complementary, not substitutes."
+ },
+ "results": [
+  {
+   "path": "forensic_corpus/genuine/g0.png",
+   "label": "genuine",
+   "op": "None",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g0_eraser.png",
+   "label": "tampered",
+   "op": "eraser",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g0_overtype.png",
+   "label": "tampered",
+   "op": "overtype",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g0_paste.png",
+   "label": "tampered",
+   "op": "paste",
+   "fused": 96.8,
+   "verdict": "LIKELY MANIPULATED",
+   "scores": {
+    "T1_white_mark_fill": 96.8,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g0_clone.png",
+   "label": "tampered",
+   "op": "clone",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g0_jpeg_splice.png",
+   "label": "tampered",
+   "op": "jpeg_splice",
+   "fused": 63.0,
+   "verdict": "LIKELY MANIPULATED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 63.1,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/genuine/g1.png",
+   "label": "genuine",
+   "op": "None",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g1_eraser.png",
+   "label": "tampered",
+   "op": "eraser",
+   "fused": 100.0,
+   "verdict": "LIKELY MANIPULATED",
+   "scores": {
+    "T1_white_mark_fill": 100.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g1_overtype.png",
+   "label": "tampered",
+   "op": "overtype",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g1_paste.png",
+   "label": "tampered",
+   "op": "paste",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g1_clone.png",
+   "label": "tampered",
+   "op": "clone",
+   "fused": 100.0,
+   "verdict": "LIKELY MANIPULATED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 100.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g1_jpeg_splice.png",
+   "label": "tampered",
+   "op": "jpeg_splice",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/genuine/g2.png",
+   "label": "genuine",
+   "op": "None",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g2_eraser.png",
+   "label": "tampered",
+   "op": "eraser",
+   "fused": 100.0,
+   "verdict": "LIKELY MANIPULATED",
+   "scores": {
+    "T1_white_mark_fill": 100.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g2_overtype.png",
+   "label": "tampered",
+   "op": "overtype",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g2_paste.png",
+   "label": "tampered",
+   "op": "paste",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g2_clone.png",
+   "label": "tampered",
+   "op": "clone",
+   "fused": 6.7,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 6.7,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g2_jpeg_splice.png",
+   "label": "tampered",
+   "op": "jpeg_splice",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/genuine/g3.png",
+   "label": "genuine",
+   "op": "None",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g3_eraser.png",
+   "label": "tampered",
+   "op": "eraser",
+   "fused": 100.0,
+   "verdict": "LIKELY MANIPULATED",
+   "scores": {
+    "T1_white_mark_fill": 100.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g3_overtype.png",
+   "label": "tampered",
+   "op": "overtype",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g3_paste.png",
+   "label": "tampered",
+   "op": "paste",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g3_clone.png",
+   "label": "tampered",
+   "op": "clone",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g3_jpeg_splice.png",
+   "label": "tampered",
+   "op": "jpeg_splice",
+   "fused": 23.2,
+   "verdict": "INCONCLUSIVE - LOW-LEVEL SIGNAL",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 23.2,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/genuine/g4.png",
+   "label": "genuine",
+   "op": "None",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g4_eraser.png",
+   "label": "tampered",
+   "op": "eraser",
+   "fused": 100.0,
+   "verdict": "LIKELY MANIPULATED",
+   "scores": {
+    "T1_white_mark_fill": 100.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g4_overtype.png",
+   "label": "tampered",
+   "op": "overtype",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g4_paste.png",
+   "label": "tampered",
+   "op": "paste",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g4_clone.png",
+   "label": "tampered",
+   "op": "clone",
+   "fused": 100.0,
+   "verdict": "LIKELY MANIPULATED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 100.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g4_jpeg_splice.png",
+   "label": "tampered",
+   "op": "jpeg_splice",
+   "fused": 91.1,
+   "verdict": "LIKELY MANIPULATED",
+   "scores": {
+    "T1_white_mark_fill": 86.8,
+    "T2_foreign_patch": 33.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/genuine/g5.png",
+   "label": "genuine",
+   "op": "None",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g5_eraser.png",
+   "label": "tampered",
+   "op": "eraser",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g5_overtype.png",
+   "label": "tampered",
+   "op": "overtype",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g5_paste.png",
+   "label": "tampered",
+   "op": "paste",
+   "fused": 96.8,
+   "verdict": "LIKELY MANIPULATED",
+   "scores": {
+    "T1_white_mark_fill": 96.8,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g5_clone.png",
+   "label": "tampered",
+   "op": "clone",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g5_jpeg_splice.png",
+   "label": "tampered",
+   "op": "jpeg_splice",
+   "fused": 76.3,
+   "verdict": "LIKELY MANIPULATED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 76.3,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/genuine/g6.png",
+   "label": "genuine",
+   "op": "None",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g6_eraser.png",
+   "label": "tampered",
+   "op": "eraser",
+   "fused": 100.0,
+   "verdict": "LIKELY MANIPULATED",
+   "scores": {
+    "T1_white_mark_fill": 100.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g6_overtype.png",
+   "label": "tampered",
+   "op": "overtype",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g6_paste.png",
+   "label": "tampered",
+   "op": "paste",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g6_clone.png",
+   "label": "tampered",
+   "op": "clone",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g6_jpeg_splice.png",
+   "label": "tampered",
+   "op": "jpeg_splice",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/genuine/g7.png",
+   "label": "genuine",
+   "op": "None",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g7_eraser.png",
+   "label": "tampered",
+   "op": "eraser",
+   "fused": 100.0,
+   "verdict": "LIKELY MANIPULATED",
+   "scores": {
+    "T1_white_mark_fill": 100.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g7_overtype.png",
+   "label": "tampered",
+   "op": "overtype",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g7_paste.png",
+   "label": "tampered",
+   "op": "paste",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g7_clone.png",
+   "label": "tampered",
+   "op": "clone",
+   "fused": 100.0,
+   "verdict": "LIKELY MANIPULATED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 100.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g7_jpeg_splice.png",
+   "label": "tampered",
+   "op": "jpeg_splice",
+   "fused": 73.2,
+   "verdict": "LIKELY MANIPULATED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 73.2,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/genuine/g8.png",
+   "label": "genuine",
+   "op": "None",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g8_eraser.png",
+   "label": "tampered",
+   "op": "eraser",
+   "fused": 100.0,
+   "verdict": "LIKELY MANIPULATED",
+   "scores": {
+    "T1_white_mark_fill": 100.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g8_overtype.png",
+   "label": "tampered",
+   "op": "overtype",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g8_paste.png",
+   "label": "tampered",
+   "op": "paste",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g8_clone.png",
+   "label": "tampered",
+   "op": "clone",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g8_jpeg_splice.png",
+   "label": "tampered",
+   "op": "jpeg_splice",
+   "fused": 49.2,
+   "verdict": "SUSPICIOUS - EXPERT REVIEW REQUIRED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 49.2,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/genuine/g9.png",
+   "label": "genuine",
+   "op": "None",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g9_eraser.png",
+   "label": "tampered",
+   "op": "eraser",
+   "fused": 100.0,
+   "verdict": "LIKELY MANIPULATED",
+   "scores": {
+    "T1_white_mark_fill": 100.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g9_overtype.png",
+   "label": "tampered",
+   "op": "overtype",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g9_paste.png",
+   "label": "tampered",
+   "op": "paste",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g9_clone.png",
+   "label": "tampered",
+   "op": "clone",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g9_jpeg_splice.png",
+   "label": "tampered",
+   "op": "jpeg_splice",
+   "fused": 45.4,
+   "verdict": "SUSPICIOUS - EXPERT REVIEW REQUIRED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 45.4,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/genuine/g10.png",
+   "label": "genuine",
+   "op": "None",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g10_eraser.png",
+   "label": "tampered",
+   "op": "eraser",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g10_overtype.png",
+   "label": "tampered",
+   "op": "overtype",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g10_paste.png",
+   "label": "tampered",
+   "op": "paste",
+   "fused": 96.8,
+   "verdict": "LIKELY MANIPULATED",
+   "scores": {
+    "T1_white_mark_fill": 96.8,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g10_clone.png",
+   "label": "tampered",
+   "op": "clone",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g10_jpeg_splice.png",
+   "label": "tampered",
+   "op": "jpeg_splice",
+   "fused": 85.0,
+   "verdict": "LIKELY MANIPULATED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 85.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/genuine/g11.png",
+   "label": "genuine",
+   "op": "None",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g11_eraser.png",
+   "label": "tampered",
+   "op": "eraser",
+   "fused": 100.0,
+   "verdict": "LIKELY MANIPULATED",
+   "scores": {
+    "T1_white_mark_fill": 100.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g11_overtype.png",
+   "label": "tampered",
+   "op": "overtype",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g11_paste.png",
+   "label": "tampered",
+   "op": "paste",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g11_clone.png",
+   "label": "tampered",
+   "op": "clone",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/tampered/g11_jpeg_splice.png",
+   "label": "tampered",
+   "op": "jpeg_splice",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "sample_evidence/03_instagram_dm_screenshot.png",
+   "label": "genuine",
+   "op": "real_demo_sample",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "sample_evidence/04_forwarded_duplicate_ig_screenshot.png",
+   "label": "genuine",
+   "op": "real_demo_sample",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  },
+  {
+   "path": "forensic_corpus/genuine/g1.png",
+   "label": "genuine",
+   "op": "real_demo_sample",
+   "fused": 0.0,
+   "verdict": "NO MANIPULATION DETECTED",
+   "scores": {
+    "T1_white_mark_fill": 0.0,
+    "T2_foreign_patch": 0.0,
+    "T3_copy_move_clone": 0.0,
+    "T4_glyph_colour_drift": 0.0,
+    "T5_jpeg_grid": 0.0,
+    "T6_container_metadata": 0.0
+   }
+  }
+ ],
+ "note": "Regenerate with: python3 learn_forensics.py"
+}

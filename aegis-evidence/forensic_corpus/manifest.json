@@ -1,0 +1,734 @@
+[
+ {
+  "path": "forensic_corpus/genuine/g0.png",
+  "label": "genuine",
+  "op": null,
+  "bbox": null
+ },
+ {
+  "path": "forensic_corpus/tampered/g0_eraser.png",
+  "label": "tampered",
+  "op": "eraser",
+  "bbox": [
+   28,
+   398,
+   444,
+   463
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g0_overtype.png",
+  "label": "tampered",
+  "op": "overtype",
+  "bbox": [
+   443,
+   494,
+   641,
+   519
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g0_paste.png",
+  "label": "tampered",
+  "op": "paste",
+  "bbox": [
+   60,
+   650,
+   310,
+   742
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g0_clone.png",
+  "label": "tampered",
+  "op": "clone",
+  "bbox": [
+   298,
+   435,
+   725,
+   515
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g0_jpeg_splice.png",
+  "label": "tampered",
+  "op": "jpeg_splice",
+  "bbox": [
+   40,
+   150,
+   400,
+   330
+  ]
+ },
+ {
+  "path": "forensic_corpus/genuine/g1.png",
+  "label": "genuine",
+  "op": null,
+  "bbox": null
+ },
+ {
+  "path": "forensic_corpus/tampered/g1_eraser.png",
+  "label": "tampered",
+  "op": "eraser",
+  "bbox": [
+   429,
+   396,
+   633,
+   438
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g1_overtype.png",
+  "label": "tampered",
+  "op": "overtype",
+  "bbox": [
+   29,
+   472,
+   227,
+   497
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g1_paste.png",
+  "label": "tampered",
+  "op": "paste",
+  "bbox": [
+   60,
+   650,
+   310,
+   742
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g1_clone.png",
+  "label": "tampered",
+  "op": "clone",
+  "bbox": [
+   51,
+   434,
+   520,
+   516
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g1_jpeg_splice.png",
+  "label": "tampered",
+  "op": "jpeg_splice",
+  "bbox": [
+   40,
+   150,
+   400,
+   330
+  ]
+ },
+ {
+  "path": "forensic_corpus/genuine/g2.png",
+  "label": "genuine",
+  "op": null,
+  "bbox": null
+ },
+ {
+  "path": "forensic_corpus/tampered/g2_eraser.png",
+  "label": "tampered",
+  "op": "eraser",
+  "bbox": [
+   475,
+   373,
+   633,
+   420
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g2_overtype.png",
+  "label": "tampered",
+  "op": "overtype",
+  "bbox": [
+   28,
+   454,
+   226,
+   479
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g2_paste.png",
+  "label": "tampered",
+  "op": "paste",
+  "bbox": [
+   60,
+   650,
+   310,
+   742
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g2_clone.png",
+  "label": "tampered",
+  "op": "clone",
+  "bbox": [
+   42,
+   410,
+   488,
+   493
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g2_jpeg_splice.png",
+  "label": "tampered",
+  "op": "jpeg_splice",
+  "bbox": [
+   40,
+   150,
+   400,
+   330
+  ]
+ },
+ {
+  "path": "forensic_corpus/genuine/g3.png",
+  "label": "genuine",
+  "op": null,
+  "bbox": null
+ },
+ {
+  "path": "forensic_corpus/tampered/g3_eraser.png",
+  "label": "tampered",
+  "op": "eraser",
+  "bbox": [
+   410,
+   366,
+   636,
+   411
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g3_overtype.png",
+  "label": "tampered",
+  "op": "overtype",
+  "bbox": [
+   36,
+   445,
+   234,
+   470
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g3_paste.png",
+  "label": "tampered",
+  "op": "paste",
+  "bbox": [
+   60,
+   650,
+   310,
+   742
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g3_clone.png",
+  "label": "tampered",
+  "op": "clone",
+  "bbox": [
+   47,
+   405,
+   431,
+   460
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g3_jpeg_splice.png",
+  "label": "tampered",
+  "op": "jpeg_splice",
+  "bbox": [
+   40,
+   150,
+   400,
+   330
+  ]
+ },
+ {
+  "path": "forensic_corpus/genuine/g4.png",
+  "label": "genuine",
+  "op": null,
+  "bbox": null
+ },
+ {
+  "path": "forensic_corpus/tampered/g4_eraser.png",
+  "label": "tampered",
+  "op": "eraser",
+  "bbox": [
+   381,
+   346,
+   631,
+   386
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g4_overtype.png",
+  "label": "tampered",
+  "op": "overtype",
+  "bbox": [
+   36,
+   416,
+   234,
+   441
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g4_paste.png",
+  "label": "tampered",
+  "op": "paste",
+  "bbox": [
+   60,
+   650,
+   310,
+   742
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g4_clone.png",
+  "label": "tampered",
+  "op": "clone",
+  "bbox": [
+   47,
+   384,
+   419,
+   442
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g4_jpeg_splice.png",
+  "label": "tampered",
+  "op": "jpeg_splice",
+  "bbox": [
+   40,
+   150,
+   400,
+   330
+  ]
+ },
+ {
+  "path": "forensic_corpus/genuine/g5.png",
+  "label": "genuine",
+  "op": null,
+  "bbox": null
+ },
+ {
+  "path": "forensic_corpus/tampered/g5_eraser.png",
+  "label": "tampered",
+  "op": "eraser",
+  "bbox": [
+   37,
+   393,
+   429,
+   460
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g5_overtype.png",
+  "label": "tampered",
+  "op": "overtype",
+  "bbox": [
+   435,
+   489,
+   633,
+   514
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g5_paste.png",
+  "label": "tampered",
+  "op": "paste",
+  "bbox": [
+   60,
+   650,
+   310,
+   742
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g5_clone.png",
+  "label": "tampered",
+  "op": "clone",
+  "bbox": [
+   293,
+   430,
+   718,
+   505
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g5_jpeg_splice.png",
+  "label": "tampered",
+  "op": "jpeg_splice",
+  "bbox": [
+   40,
+   150,
+   400,
+   330
+  ]
+ },
+ {
+  "path": "forensic_corpus/genuine/g6.png",
+  "label": "genuine",
+  "op": null,
+  "bbox": null
+ },
+ {
+  "path": "forensic_corpus/tampered/g6_eraser.png",
+  "label": "tampered",
+  "op": "eraser",
+  "bbox": [
+   432,
+   391,
+   640,
+   438
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g6_overtype.png",
+  "label": "tampered",
+  "op": "overtype",
+  "bbox": [
+   31,
+   468,
+   229,
+   493
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g6_paste.png",
+  "label": "tampered",
+  "op": "paste",
+  "bbox": [
+   60,
+   650,
+   310,
+   742
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g6_clone.png",
+  "label": "tampered",
+  "op": "clone",
+  "bbox": [
+   47,
+   424,
+   514,
+   501
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g6_jpeg_splice.png",
+  "label": "tampered",
+  "op": "jpeg_splice",
+  "bbox": [
+   40,
+   150,
+   400,
+   330
+  ]
+ },
+ {
+  "path": "forensic_corpus/genuine/g7.png",
+  "label": "genuine",
+  "op": null,
+  "bbox": null
+ },
+ {
+  "path": "forensic_corpus/tampered/g7_eraser.png",
+  "label": "tampered",
+  "op": "eraser",
+  "bbox": [
+   450,
+   374,
+   634,
+   421
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g7_overtype.png",
+  "label": "tampered",
+  "op": "overtype",
+  "bbox": [
+   28,
+   455,
+   226,
+   480
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g7_paste.png",
+  "label": "tampered",
+  "op": "paste",
+  "bbox": [
+   60,
+   650,
+   310,
+   742
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g7_clone.png",
+  "label": "tampered",
+  "op": "clone",
+  "bbox": [
+   46,
+   410,
+   500,
+   486
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g7_jpeg_splice.png",
+  "label": "tampered",
+  "op": "jpeg_splice",
+  "bbox": [
+   40,
+   150,
+   400,
+   330
+  ]
+ },
+ {
+  "path": "forensic_corpus/genuine/g8.png",
+  "label": "genuine",
+  "op": null,
+  "bbox": null
+ },
+ {
+  "path": "forensic_corpus/tampered/g8_eraser.png",
+  "label": "tampered",
+  "op": "eraser",
+  "bbox": [
+   415,
+   375,
+   638,
+   421
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g8_overtype.png",
+  "label": "tampered",
+  "op": "overtype",
+  "bbox": [
+   32,
+   453,
+   230,
+   478
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g8_paste.png",
+  "label": "tampered",
+  "op": "paste",
+  "bbox": [
+   60,
+   650,
+   310,
+   742
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g8_clone.png",
+  "label": "tampered",
+  "op": "clone",
+  "bbox": [
+   45,
+   410,
+   420,
+   471
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g8_jpeg_splice.png",
+  "label": "tampered",
+  "op": "jpeg_splice",
+  "bbox": [
+   40,
+   150,
+   400,
+   330
+  ]
+ },
+ {
+  "path": "forensic_corpus/genuine/g9.png",
+  "label": "genuine",
+  "op": null,
+  "bbox": null
+ },
+ {
+  "path": "forensic_corpus/tampered/g9_eraser.png",
+  "label": "tampered",
+  "op": "eraser",
+  "bbox": [
+   395,
+   345,
+   639,
+   389
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g9_overtype.png",
+  "label": "tampered",
+  "op": "overtype",
+  "bbox": [
+   31,
+   421,
+   229,
+   446
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g9_paste.png",
+  "label": "tampered",
+  "op": "paste",
+  "bbox": [
+   60,
+   650,
+   310,
+   742
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g9_clone.png",
+  "label": "tampered",
+  "op": "clone",
+  "bbox": [
+   50,
+   382,
+   440,
+   441
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g9_jpeg_splice.png",
+  "label": "tampered",
+  "op": "jpeg_splice",
+  "bbox": [
+   40,
+   150,
+   400,
+   330
+  ]
+ },
+ {
+  "path": "forensic_corpus/genuine/g10.png",
+  "label": "genuine",
+  "op": null,
+  "bbox": null
+ },
+ {
+  "path": "forensic_corpus/tampered/g10_eraser.png",
+  "label": "tampered",
+  "op": "eraser",
+  "bbox": [
+   31,
+   393,
+   442,
+   456
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g10_overtype.png",
+  "label": "tampered",
+  "op": "overtype",
+  "bbox": [
+   443,
+   487,
+   641,
+   512
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g10_paste.png",
+  "label": "tampered",
+  "op": "paste",
+  "bbox": [
+   60,
+   650,
+   310,
+   742
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g10_clone.png",
+  "label": "tampered",
+  "op": "clone",
+  "bbox": [
+   295,
+   433,
+   724,
+   513
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g10_jpeg_splice.png",
+  "label": "tampered",
+  "op": "jpeg_splice",
+  "bbox": [
+   40,
+   150,
+   400,
+   330
+  ]
+ },
+ {
+  "path": "forensic_corpus/genuine/g11.png",
+  "label": "genuine",
+  "op": null,
+  "bbox": null
+ },
+ {
+  "path": "forensic_corpus/tampered/g11_eraser.png",
+  "label": "tampered",
+  "op": "eraser",
+  "bbox": [
+   409,
+   390,
+   634,
+   430
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g11_overtype.png",
+  "label": "tampered",
+  "op": "overtype",
+  "bbox": [
+   38,
+   462,
+   236,
+   487
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g11_paste.png",
+  "label": "tampered",
+  "op": "paste",
+  "bbox": [
+   60,
+   650,
+   310,
+   742
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g11_clone.png",
+  "label": "tampered",
+  "op": "clone",
+  "bbox": [
+   43,
+   423,
+   504,
+   500
+  ]
+ },
+ {
+  "path": "forensic_corpus/tampered/g11_jpeg_splice.png",
+  "label": "tampered",
+  "op": "jpeg_splice",
+  "bbox": [
+   40,
+   150,
+   400,
+   330
+  ]
+ }
+]

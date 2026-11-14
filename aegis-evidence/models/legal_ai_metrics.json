@@ -1,0 +1,19 @@
+{
+  "engine": "precedent-classifier",
+  "train_rows": 15550,
+  "calib_rows": 2999,
+  "test_rows": 3666,
+  "sections": 72,
+  "corpus_rows_available": 40001,
+  "top1": 10.39,
+  "top5": 45.36,
+  "top10": 65.96,
+  "calibrated_top1": 15.52,
+  "trained_at": "2026-11-14 11:45:19",
+  "peak_rss_mb": 1217,
+  "source_datasets": [
+    "Hanno-Labs/indian-ipc-statute-identification (CC-BY-4.0) \u2014 40,001 Indian High Court fact narratives -> IPC section, statute refs masked by publisher",
+    "GSMS-B/indian-legal-sections-bns-bnss-bsa-2023 (Apache-2.0) \u2014 operative text of BNS/BNSS/BSA 2023",
+    "GSMS-B/ipc-bns-crpc-bnss-iea-bsa-respective-old-new-sections-mapping (CC-BY-4.0)"
+  ]
+}
